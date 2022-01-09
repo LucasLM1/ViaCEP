@@ -51,6 +51,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     height: 40px;
+    cursor: pointer;
 }
 
 /* input::-webkit-outer-spin-button,
@@ -84,6 +85,7 @@ input::-webkit-inner-spin-button {
     font-size: 20px;
     font-weight: bold;
     padding: 0 10px;
+    cursor: pointer;
 }
 
 .inputbox input:focus,
@@ -108,9 +110,47 @@ input::-webkit-inner-spin-button {
     color: var(--white);
     font-size: 20px;
     font-weight: bold;
-    border-radius: 2px;
+    border-radius: 15px;
 }
 
-footer {
-    color: var(--orange);
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.LM{
+    padding-right: 20px;
+}
+
+.constructedBy{
+    font-size: 15pt;
+    margin-top: 15px;
+}
+
+
+.imgRedes{
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    margin: auto 5px;
+}
+
+.contato{
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media(max-width:425px){
+    .constructedBy{
+        font-size: 13pt;
+    }
+}
+
+@media(max-width:380px){
+    .constructedBy{
+        font-size: 11pt;
+    }
 }
